@@ -1,0 +1,66 @@
+api:
+  key: E9BBC4D14D444D7E97C90190ABD051BA
+plugins:
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1711358100
+      _important:
+        read_until: 1698310200
+      _octopi:
+        read_until: 1684929600
+      _plugins:
+        read_until: 1720224000
+      _releases:
+        read_until: 1715679000
+  classicwebcam:
+    _config_version: 1
+    snapshot: /webcam/?action=snapshot
+    stream: http://192.168.178.179:8080/?action=stream
+  discovery:
+    upnpUuid: 3e31b6ca-633b-4bc0-9a13-7e860f000b77
+  errortracking:
+    unique_id: 59e30cd6-db24-415c-8f49-1becd167cf95
+  gcodeviewer:
+    _config_version: 1
+  softwareupdate:
+    _config_version: 9
+  tracking:
+    enabled: false
+    unique_id: a4553c8f-6f7f-4149-b99e-f16fab55c037
+  virtual_printer:
+    _config_version: 1
+    enabled: true
+printerProfiles:
+  default: _default
+server:
+  commands:
+    serverRestartCommand: OctoRes
+    systemRestartCommand: SysRes
+    systemShutdownCommand: SysDow
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  secretKey: VYTzrwECBs3fLukKSb3rvaPT5cigSa6G
+  seenWizards:
+    backup: null
+    classicwebcam: 1
+    corewizard: 4
+    file_check: 1
+    tracking: null
+temperature:
+  profiles:
+  - bed: 100
+    chamber: null
+    extruder: 210
+    name: ABS
+  - bed: 60
+    chamber: null
+    extruder: 180
+    name: PLA
+webcam:
+  ffmpeg: /usr/bin/ffmpeg
+  watermark: false
